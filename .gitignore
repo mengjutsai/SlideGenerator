@@ -1,0 +1,12 @@
+*.out
+*.toc
+*.snm
+*.nav
+*.log
+*.aux
+*.pyc
+*_backup
+FitResult*
+Fit-*
+slide*
+Validation*
