@@ -31,6 +31,7 @@ def getArgs():
     parser.add_argument("--output", dest="outputPath", action="store", default="", help="output file")
     parser.add_argument("--outputfile", dest="outputfile", action="store", default="", help="output file")
     parser.add_argument("--input", dest="input", action="store", default="", help="input file")
+    parser.add_argument("--inputFolder", dest="inputFolder", action="store", default="", help="input folder")
 
     # parser.add_argument("--var", dest="variables", action="store", default="HT_all", help="Variables for trainning")
     # parser.add_argument("--mass", dest="mass", action="store", default="", help="Mass point")
@@ -75,7 +76,9 @@ def main():
 
     input = args.input
     plots = imp.load_source('plotting', input)
-    plots.plot(outF)
+
+    inputFolder = args.inputFolder
+    plots.plot(outF,inputFolder)
 
 
     closure(outF)

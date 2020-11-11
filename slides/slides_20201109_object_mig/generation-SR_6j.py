@@ -184,7 +184,7 @@ Dict_NewVar = {"nJets": "both",
 
             }
 
-def plot(outF):
+def plot(outF,inputFolder):
 
     # print(Dict_new_selection.keys(),Dict_samples.keys())
     sel = "SR_6j"
@@ -223,21 +223,21 @@ def plot(outF):
                 # print(Title)
 
                 if "6p" in plot:
-                    make_6plots(outF, Title
-                            ,VarList
-                            ,"/Users/ploww/dropbox_meng/HEP/Results/BSM4tops/Slides20201106_new_offline_production/results/"+sel+"/"
+                    make_6plots(outF, Title,
+                            VarList,
+                            inputFolder+sel+"/"
                             )
                 elif "2p" in plot:
                     make_2plots(outF, Title
                             ,VarList
-                            ,"/Users/ploww/dropbox_meng/HEP/Results/BSM4tops/Slides20201106_new_offline_production/results/"+sel+"/"
+                            inputFolder+sel+"/"
                             )
                 elif "3p" in plot:
                     make_3plots(outF, Title
                             ,VarList
-                            ,"/Users/ploww/dropbox_meng/HEP/Results/BSM4tops/Slides20201106_new_offline_production/results/"+sel+"/"
+                            inputFolder+sel+"/"
                             )
-                
+
 
 
 
