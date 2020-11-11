@@ -1,0 +1,444 @@
+\documentclass[pdf]{beamer}
+\usepackage{tikz}
+\usepackage[utf8]{inputenc}
+\usepackage{graphicx}
+\usepackage{color}
+\usepackage{lscape}
+\usepackage{subfig}
+\usepackage[skip=0.1cm]{caption}
+\usepackage{standalone}
+\usepackage{tikz}
+\usepackage{hyperref}
+\captionsetup[subfloat]{captionskip=0.1pt, labelformat=empty, position=top}
+\captionsetup{labelformat=empty,labelsep=none}
+\usetikzlibrary{positioning,arrows}
+\mode<presentation>{
+    \usetheme{Warsaw}
+    \usecolortheme{default}
+    \usefonttheme{serif}
+    \setbeamertemplate{navigation symbols}{}
+    \setbeamertemplate{caption}[numbered]
+    \setbeamertemplate{footline}[frame number]{}
+}
+\title[Recent Work]{Recent Work}
+\author{%
+\textsc{\scriptsize{\underline{Meng-Ju Tsai}, Zhi Zheng, Jianming Qian}}\\}
+\date{\today}
+\begin{document}
+\setbeamertemplate{caption}{\raggedright\insertcaption\par}
+\begin{frame}
+\titlepage
+\end{frame}
+\begin{frame}{}
+\centering
+\textbf{Fit results}
+\end{frame}
+\begin{frame}{\large{SM 4tops Plain Asimov Fit}}
+\vspace{-0.8cm}
+\begin{figure}
+\centering
+\subfloat[\scriptsize{}]{\includegraphics[width=0.38\textwidth,height=0.45\textheight,trim=0 0 6cm 0]{/Users/ploww/HEP/working/Exotics4top/macro/trex-fitter-config/FinalFit/official/FitResults/Slides20200604/SM4top_Finalfit_Full_Syst_BDT_PlainAsimov_v3/NormFactors.pdf}}
+\subfloat[\scriptsize{}]{\includegraphics[width=0.6\textwidth,height=0.7\textheight]{/Users/ploww/HEP/working/Exotics4top/macro/trex-fitter-config/FinalFit/official/FitResults/Slides20200604/SM4top_Finalfit_Full_Syst_BDT_PlainAsimov_v3/CorrMatrix.pdf}}
+\end{figure}
+\vspace{-0.5cm}
+\begin{figure}
+\centering
+\includegraphics[width=0.2\textwidth,angle=90]{/Users/ploww/HEP/working/Exotics4top/macro/trex-fitter-config/FinalFit/official/FitResults/Slides20200604/SM4top_Finalfit_Full_Syst_BDT_PlainAsimov_v3/NuisPar.pdf}
+\end{figure}
+\end{frame}
+\begin{frame}{\large{SM/BSM Real CR-Only Fit}}
+\vspace{-0.8cm}
+\begin{figure}
+\centering
+\subfloat[\scriptsize{}]{\includegraphics[width=0.38\textwidth,height=0.45\textheight,trim=0 0 6cm 0]{/Users/ploww/HEP/working/Exotics4top/macro/trex-fitter-config/FinalFit/official/FitResults/Slides20200529/CR-OnlyFit/SM_Finalfit_Full_Syst_BDT_CROnlyFit_v3/NormFactors.pdf}}
+\subfloat[\scriptsize{}]{\includegraphics[width=0.6\textwidth,height=0.7\textheight]{/Users/ploww/HEP/working/Exotics4top/macro/trex-fitter-config/FinalFit/official/FitResults/Slides20200529/CR-OnlyFit/SM_Finalfit_Full_Syst_BDT_CROnlyFit_v3/CorrMatrix.pdf}}
+\end{figure}
+\vspace{-0.5cm}
+\begin{figure}
+\centering
+\includegraphics[width=0.2\textwidth,angle=90]{/Users/ploww/HEP/working/Exotics4top/macro/trex-fitter-config/FinalFit/official/FitResults/Slides20200529/CR-OnlyFit/SM_Finalfit_Full_Syst_BDT_CROnlyFit_v3/NuisPar.pdf}
+\end{figure}
+\end{frame}
+\begin{frame}{\large{SM Realistic Asimov Fit}}
+\vspace{-0.8cm}
+\begin{figure}
+\centering
+\subfloat[\scriptsize{}]{\includegraphics[width=0.38\textwidth,height=0.45\textheight,trim=0 0 6cm 0]{/Users/ploww/HEP/working/Exotics4top/macro/trex-fitter-config/FinalFit/official/FitResults/Slides20200604/SM_Finalfit_Full_Syst_BDT_RealisticCR_AsimovSR_Fit_v2/NormFactors.pdf}}
+\subfloat[\scriptsize{}]{\includegraphics[width=0.6\textwidth,height=0.7\textheight]{/Users/ploww/HEP/working/Exotics4top/macro/trex-fitter-config/FinalFit/official/FitResults/Slides20200604/SM_Finalfit_Full_Syst_BDT_RealisticCR_AsimovSR_Fit_v2/CorrMatrix.pdf}}
+\end{figure}
+\vspace{-0.5cm}
+\begin{figure}
+\centering
+\includegraphics[width=0.2\textwidth,angle=90]{/Users/ploww/HEP/working/Exotics4top/macro/trex-fitter-config/FinalFit/official/FitResults/Slides20200604/SM_Finalfit_Full_Syst_BDT_RealisticCR_AsimovSR_Fit_v2/NuisPar.pdf}
+\end{figure}
+\end{frame}
+\begin{frame}{\large{Realistic Asimov HT Fit - mH400 - Free Float NF\_tttt w/ nominal 1}}
+\vspace{-0.8cm}
+\begin{figure}
+\centering
+\subfloat[\scriptsize{}]{\includegraphics[width=0.38\textwidth,height=0.45\textheight,trim=0 0 6cm 0]{/Users/ploww/HEP/working/Exotics4top/macro/trex-fitter-config/FinalFit/official/FitResults/Slides20200604/BSMRealisticAsimov/FreeFloat/NF_tttt1/BSM_Finalfit_Full_Syst_mH400_HT_RealisticAsimov_NFtttt1_v1/NormFactors.pdf}}
+\subfloat[\scriptsize{}]{\includegraphics[width=0.6\textwidth,height=0.7\textheight]{/Users/ploww/HEP/working/Exotics4top/macro/trex-fitter-config/FinalFit/official/FitResults/Slides20200604/BSMRealisticAsimov/FreeFloat/NF_tttt1/BSM_Finalfit_Full_Syst_mH400_HT_RealisticAsimov_NFtttt1_v1/CorrMatrix.pdf}}
+\end{figure}
+\vspace{-0.5cm}
+\begin{figure}
+\centering
+\includegraphics[width=0.2\textwidth,angle=90]{/Users/ploww/HEP/working/Exotics4top/macro/trex-fitter-config/FinalFit/official/FitResults/Slides20200604/BSMRealisticAsimov/FreeFloat/NF_tttt1/BSM_Finalfit_Full_Syst_mH400_HT_RealisticAsimov_NFtttt1_v1/NuisPar.pdf}
+\end{figure}
+\end{frame}
+\begin{frame}{\large{Realistic Asimov HT Fit - mH500 - Free Float NF\_tttt w/ nominal 1}}
+\vspace{-0.8cm}
+\begin{figure}
+\centering
+\subfloat[\scriptsize{}]{\includegraphics[width=0.38\textwidth,height=0.45\textheight,trim=0 0 6cm 0]{/Users/ploww/HEP/working/Exotics4top/macro/trex-fitter-config/FinalFit/official/FitResults/Slides20200604/BSMRealisticAsimov/FreeFloat/NF_tttt1/BSM_Finalfit_Full_Syst_mH500_HT_RealisticAsimov_NFtttt1_v1/NormFactors.pdf}}
+\subfloat[\scriptsize{}]{\includegraphics[width=0.6\textwidth,height=0.7\textheight]{/Users/ploww/HEP/working/Exotics4top/macro/trex-fitter-config/FinalFit/official/FitResults/Slides20200604/BSMRealisticAsimov/FreeFloat/NF_tttt1/BSM_Finalfit_Full_Syst_mH500_HT_RealisticAsimov_NFtttt1_v1/CorrMatrix.pdf}}
+\end{figure}
+\vspace{-0.5cm}
+\begin{figure}
+\centering
+\includegraphics[width=0.2\textwidth,angle=90]{/Users/ploww/HEP/working/Exotics4top/macro/trex-fitter-config/FinalFit/official/FitResults/Slides20200604/BSMRealisticAsimov/FreeFloat/NF_tttt1/BSM_Finalfit_Full_Syst_mH500_HT_RealisticAsimov_NFtttt1_v1/NuisPar.pdf}
+\end{figure}
+\end{frame}
+\begin{frame}{\large{Realistic Asimov HT Fit - mH600 - Free Float NF\_tttt w/ nominal 1}}
+\vspace{-0.8cm}
+\begin{figure}
+\centering
+\subfloat[\scriptsize{}]{\includegraphics[width=0.38\textwidth,height=0.45\textheight,trim=0 0 6cm 0]{/Users/ploww/HEP/working/Exotics4top/macro/trex-fitter-config/FinalFit/official/FitResults/Slides20200604/BSMRealisticAsimov/FreeFloat/NF_tttt1/BSM_Finalfit_Full_Syst_mH600_HT_RealisticAsimov_NFtttt1_v1/NormFactors.pdf}}
+\subfloat[\scriptsize{}]{\includegraphics[width=0.6\textwidth,height=0.7\textheight]{/Users/ploww/HEP/working/Exotics4top/macro/trex-fitter-config/FinalFit/official/FitResults/Slides20200604/BSMRealisticAsimov/FreeFloat/NF_tttt1/BSM_Finalfit_Full_Syst_mH600_HT_RealisticAsimov_NFtttt1_v1/CorrMatrix.pdf}}
+\end{figure}
+\vspace{-0.5cm}
+\begin{figure}
+\centering
+\includegraphics[width=0.2\textwidth,angle=90]{/Users/ploww/HEP/working/Exotics4top/macro/trex-fitter-config/FinalFit/official/FitResults/Slides20200604/BSMRealisticAsimov/FreeFloat/NF_tttt1/BSM_Finalfit_Full_Syst_mH600_HT_RealisticAsimov_NFtttt1_v1/NuisPar.pdf}
+\end{figure}
+\end{frame}
+\begin{frame}{\large{Realistic Asimov HT Fit - mH700 - Free Float NF\_tttt w/ nominal 1}}
+\vspace{-0.8cm}
+\begin{figure}
+\centering
+\subfloat[\scriptsize{}]{\includegraphics[width=0.38\textwidth,height=0.45\textheight,trim=0 0 6cm 0]{/Users/ploww/HEP/working/Exotics4top/macro/trex-fitter-config/FinalFit/official/FitResults/Slides20200604/BSMRealisticAsimov/FreeFloat/NF_tttt1/BSM_Finalfit_Full_Syst_mH700_HT_RealisticAsimov_NFtttt1_v1/NormFactors.pdf}}
+\subfloat[\scriptsize{}]{\includegraphics[width=0.6\textwidth,height=0.7\textheight]{/Users/ploww/HEP/working/Exotics4top/macro/trex-fitter-config/FinalFit/official/FitResults/Slides20200604/BSMRealisticAsimov/FreeFloat/NF_tttt1/BSM_Finalfit_Full_Syst_mH700_HT_RealisticAsimov_NFtttt1_v1/CorrMatrix.pdf}}
+\end{figure}
+\vspace{-0.5cm}
+\begin{figure}
+\centering
+\includegraphics[width=0.2\textwidth,angle=90]{/Users/ploww/HEP/working/Exotics4top/macro/trex-fitter-config/FinalFit/official/FitResults/Slides20200604/BSMRealisticAsimov/FreeFloat/NF_tttt1/BSM_Finalfit_Full_Syst_mH700_HT_RealisticAsimov_NFtttt1_v1/NuisPar.pdf}
+\end{figure}
+\end{frame}
+\begin{frame}{\large{Realistic Asimov HT Fit - mH800 - Free Float NF\_tttt w/ nominal 1}}
+\vspace{-0.8cm}
+\begin{figure}
+\centering
+\subfloat[\scriptsize{}]{\includegraphics[width=0.38\textwidth,height=0.45\textheight,trim=0 0 6cm 0]{/Users/ploww/HEP/working/Exotics4top/macro/trex-fitter-config/FinalFit/official/FitResults/Slides20200604/BSMRealisticAsimov/FreeFloat/NF_tttt1/BSM_Finalfit_Full_Syst_mH800_HT_RealisticAsimov_NFtttt1_v1/NormFactors.pdf}}
+\subfloat[\scriptsize{}]{\includegraphics[width=0.6\textwidth,height=0.7\textheight]{/Users/ploww/HEP/working/Exotics4top/macro/trex-fitter-config/FinalFit/official/FitResults/Slides20200604/BSMRealisticAsimov/FreeFloat/NF_tttt1/BSM_Finalfit_Full_Syst_mH800_HT_RealisticAsimov_NFtttt1_v1/CorrMatrix.pdf}}
+\end{figure}
+\vspace{-0.5cm}
+\begin{figure}
+\centering
+\includegraphics[width=0.2\textwidth,angle=90]{/Users/ploww/HEP/working/Exotics4top/macro/trex-fitter-config/FinalFit/official/FitResults/Slides20200604/BSMRealisticAsimov/FreeFloat/NF_tttt1/BSM_Finalfit_Full_Syst_mH800_HT_RealisticAsimov_NFtttt1_v1/NuisPar.pdf}
+\end{figure}
+\end{frame}
+\begin{frame}{\large{Realistic Asimov HT Fit - mH900 - Free Float NF\_tttt w/ nominal 1}}
+\vspace{-0.8cm}
+\begin{figure}
+\centering
+\subfloat[\scriptsize{}]{\includegraphics[width=0.38\textwidth,height=0.45\textheight,trim=0 0 6cm 0]{/Users/ploww/HEP/working/Exotics4top/macro/trex-fitter-config/FinalFit/official/FitResults/Slides20200604/BSMRealisticAsimov/FreeFloat/NF_tttt1/BSM_Finalfit_Full_Syst_mH900_HT_RealisticAsimov_NFtttt1_v1/NormFactors.pdf}}
+\subfloat[\scriptsize{}]{\includegraphics[width=0.6\textwidth,height=0.7\textheight]{/Users/ploww/HEP/working/Exotics4top/macro/trex-fitter-config/FinalFit/official/FitResults/Slides20200604/BSMRealisticAsimov/FreeFloat/NF_tttt1/BSM_Finalfit_Full_Syst_mH900_HT_RealisticAsimov_NFtttt1_v1/CorrMatrix.pdf}}
+\end{figure}
+\vspace{-0.5cm}
+\begin{figure}
+\centering
+\includegraphics[width=0.2\textwidth,angle=90]{/Users/ploww/HEP/working/Exotics4top/macro/trex-fitter-config/FinalFit/official/FitResults/Slides20200604/BSMRealisticAsimov/FreeFloat/NF_tttt1/BSM_Finalfit_Full_Syst_mH900_HT_RealisticAsimov_NFtttt1_v1/NuisPar.pdf}
+\end{figure}
+\end{frame}
+\begin{frame}{\large{Realistic Asimov HT Fit - mH1000 - Free Float NF\_tttt w/ nominal 1}}
+\vspace{-0.8cm}
+\begin{figure}
+\centering
+\subfloat[\scriptsize{}]{\includegraphics[width=0.38\textwidth,height=0.45\textheight,trim=0 0 6cm 0]{/Users/ploww/HEP/working/Exotics4top/macro/trex-fitter-config/FinalFit/official/FitResults/Slides20200604/BSMRealisticAsimov/FreeFloat/NF_tttt1/BSM_Finalfit_Full_Syst_mH1000_HT_RealisticAsimov_NFtttt1_v1/NormFactors.pdf}}
+\subfloat[\scriptsize{}]{\includegraphics[width=0.6\textwidth,height=0.7\textheight]{/Users/ploww/HEP/working/Exotics4top/macro/trex-fitter-config/FinalFit/official/FitResults/Slides20200604/BSMRealisticAsimov/FreeFloat/NF_tttt1/BSM_Finalfit_Full_Syst_mH1000_HT_RealisticAsimov_NFtttt1_v1/CorrMatrix.pdf}}
+\end{figure}
+\vspace{-0.5cm}
+\begin{figure}
+\centering
+\includegraphics[width=0.2\textwidth,angle=90]{/Users/ploww/HEP/working/Exotics4top/macro/trex-fitter-config/FinalFit/official/FitResults/Slides20200604/BSMRealisticAsimov/FreeFloat/NF_tttt1/BSM_Finalfit_Full_Syst_mH1000_HT_RealisticAsimov_NFtttt1_v1/NuisPar.pdf}
+\end{figure}
+\end{frame}
+\begin{frame}{\large{Realistic Asimov HT Fit - mH400 - Free Float NF\_tttt w/ nominal 2}}
+\vspace{-0.8cm}
+\begin{figure}
+\centering
+\subfloat[\scriptsize{}]{\includegraphics[width=0.38\textwidth,height=0.45\textheight,trim=0 0 6cm 0]{/Users/ploww/HEP/working/Exotics4top/macro/trex-fitter-config/FinalFit/official/FitResults/Slides20200604/BSMRealisticAsimov/FreeFloat/NF_tttt2/BSM_Finalfit_Full_Syst_mH400_HT_RealisticAsimov_NFtttt2_v1/NormFactors.pdf}}
+\subfloat[\scriptsize{}]{\includegraphics[width=0.6\textwidth,height=0.7\textheight]{/Users/ploww/HEP/working/Exotics4top/macro/trex-fitter-config/FinalFit/official/FitResults/Slides20200604/BSMRealisticAsimov/FreeFloat/NF_tttt2/BSM_Finalfit_Full_Syst_mH400_HT_RealisticAsimov_NFtttt2_v1/CorrMatrix.pdf}}
+\end{figure}
+\vspace{-0.5cm}
+\begin{figure}
+\centering
+\includegraphics[width=0.2\textwidth,angle=90]{/Users/ploww/HEP/working/Exotics4top/macro/trex-fitter-config/FinalFit/official/FitResults/Slides20200604/BSMRealisticAsimov/FreeFloat/NF_tttt2/BSM_Finalfit_Full_Syst_mH400_HT_RealisticAsimov_NFtttt2_v1/NuisPar.pdf}
+\end{figure}
+\end{frame}
+\begin{frame}{\large{Realistic Asimov HT Fit - mH500 - Free Float NF\_tttt w/ nominal 2}}
+\vspace{-0.8cm}
+\begin{figure}
+\centering
+\subfloat[\scriptsize{}]{\includegraphics[width=0.38\textwidth,height=0.45\textheight,trim=0 0 6cm 0]{/Users/ploww/HEP/working/Exotics4top/macro/trex-fitter-config/FinalFit/official/FitResults/Slides20200604/BSMRealisticAsimov/FreeFloat/NF_tttt2/BSM_Finalfit_Full_Syst_mH500_HT_RealisticAsimov_NFtttt2_v1/NormFactors.pdf}}
+\subfloat[\scriptsize{}]{\includegraphics[width=0.6\textwidth,height=0.7\textheight]{/Users/ploww/HEP/working/Exotics4top/macro/trex-fitter-config/FinalFit/official/FitResults/Slides20200604/BSMRealisticAsimov/FreeFloat/NF_tttt2/BSM_Finalfit_Full_Syst_mH500_HT_RealisticAsimov_NFtttt2_v1/CorrMatrix.pdf}}
+\end{figure}
+\vspace{-0.5cm}
+\begin{figure}
+\centering
+\includegraphics[width=0.2\textwidth,angle=90]{/Users/ploww/HEP/working/Exotics4top/macro/trex-fitter-config/FinalFit/official/FitResults/Slides20200604/BSMRealisticAsimov/FreeFloat/NF_tttt2/BSM_Finalfit_Full_Syst_mH500_HT_RealisticAsimov_NFtttt2_v1/NuisPar.pdf}
+\end{figure}
+\end{frame}
+\begin{frame}{\large{Realistic Asimov HT Fit - mH600 - Free Float NF\_tttt w/ nominal 2}}
+\vspace{-0.8cm}
+\begin{figure}
+\centering
+\subfloat[\scriptsize{}]{\includegraphics[width=0.38\textwidth,height=0.45\textheight,trim=0 0 6cm 0]{/Users/ploww/HEP/working/Exotics4top/macro/trex-fitter-config/FinalFit/official/FitResults/Slides20200604/BSMRealisticAsimov/FreeFloat/NF_tttt2/BSM_Finalfit_Full_Syst_mH600_HT_RealisticAsimov_NFtttt2_v1/NormFactors.pdf}}
+\subfloat[\scriptsize{}]{\includegraphics[width=0.6\textwidth,height=0.7\textheight]{/Users/ploww/HEP/working/Exotics4top/macro/trex-fitter-config/FinalFit/official/FitResults/Slides20200604/BSMRealisticAsimov/FreeFloat/NF_tttt2/BSM_Finalfit_Full_Syst_mH600_HT_RealisticAsimov_NFtttt2_v1/CorrMatrix.pdf}}
+\end{figure}
+\vspace{-0.5cm}
+\begin{figure}
+\centering
+\includegraphics[width=0.2\textwidth,angle=90]{/Users/ploww/HEP/working/Exotics4top/macro/trex-fitter-config/FinalFit/official/FitResults/Slides20200604/BSMRealisticAsimov/FreeFloat/NF_tttt2/BSM_Finalfit_Full_Syst_mH600_HT_RealisticAsimov_NFtttt2_v1/NuisPar.pdf}
+\end{figure}
+\end{frame}
+\begin{frame}{\large{Realistic Asimov HT Fit - mH700 - Free Float NF\_tttt w/ nominal 2}}
+\vspace{-0.8cm}
+\begin{figure}
+\centering
+\subfloat[\scriptsize{}]{\includegraphics[width=0.38\textwidth,height=0.45\textheight,trim=0 0 6cm 0]{/Users/ploww/HEP/working/Exotics4top/macro/trex-fitter-config/FinalFit/official/FitResults/Slides20200604/BSMRealisticAsimov/FreeFloat/NF_tttt2/BSM_Finalfit_Full_Syst_mH700_HT_RealisticAsimov_NFtttt2_v1/NormFactors.pdf}}
+\subfloat[\scriptsize{}]{\includegraphics[width=0.6\textwidth,height=0.7\textheight]{/Users/ploww/HEP/working/Exotics4top/macro/trex-fitter-config/FinalFit/official/FitResults/Slides20200604/BSMRealisticAsimov/FreeFloat/NF_tttt2/BSM_Finalfit_Full_Syst_mH700_HT_RealisticAsimov_NFtttt2_v1/CorrMatrix.pdf}}
+\end{figure}
+\vspace{-0.5cm}
+\begin{figure}
+\centering
+\includegraphics[width=0.2\textwidth,angle=90]{/Users/ploww/HEP/working/Exotics4top/macro/trex-fitter-config/FinalFit/official/FitResults/Slides20200604/BSMRealisticAsimov/FreeFloat/NF_tttt2/BSM_Finalfit_Full_Syst_mH700_HT_RealisticAsimov_NFtttt2_v1/NuisPar.pdf}
+\end{figure}
+\end{frame}
+\begin{frame}{\large{Realistic Asimov HT Fit - mH800 - Free Float NF\_tttt w/ nominal 2}}
+\vspace{-0.8cm}
+\begin{figure}
+\centering
+\subfloat[\scriptsize{}]{\includegraphics[width=0.38\textwidth,height=0.45\textheight,trim=0 0 6cm 0]{/Users/ploww/HEP/working/Exotics4top/macro/trex-fitter-config/FinalFit/official/FitResults/Slides20200604/BSMRealisticAsimov/FreeFloat/NF_tttt2/BSM_Finalfit_Full_Syst_mH800_HT_RealisticAsimov_NFtttt2_v1/NormFactors.pdf}}
+\subfloat[\scriptsize{}]{\includegraphics[width=0.6\textwidth,height=0.7\textheight]{/Users/ploww/HEP/working/Exotics4top/macro/trex-fitter-config/FinalFit/official/FitResults/Slides20200604/BSMRealisticAsimov/FreeFloat/NF_tttt2/BSM_Finalfit_Full_Syst_mH800_HT_RealisticAsimov_NFtttt2_v1/CorrMatrix.pdf}}
+\end{figure}
+\vspace{-0.5cm}
+\begin{figure}
+\centering
+\includegraphics[width=0.2\textwidth,angle=90]{/Users/ploww/HEP/working/Exotics4top/macro/trex-fitter-config/FinalFit/official/FitResults/Slides20200604/BSMRealisticAsimov/FreeFloat/NF_tttt2/BSM_Finalfit_Full_Syst_mH800_HT_RealisticAsimov_NFtttt2_v1/NuisPar.pdf}
+\end{figure}
+\end{frame}
+\begin{frame}{\large{Realistic Asimov HT Fit - mH900 - Free Float NF\_tttt w/ nominal 2}}
+\vspace{-0.8cm}
+\begin{figure}
+\centering
+\subfloat[\scriptsize{}]{\includegraphics[width=0.38\textwidth,height=0.45\textheight,trim=0 0 6cm 0]{/Users/ploww/HEP/working/Exotics4top/macro/trex-fitter-config/FinalFit/official/FitResults/Slides20200604/BSMRealisticAsimov/FreeFloat/NF_tttt2/BSM_Finalfit_Full_Syst_mH900_HT_RealisticAsimov_NFtttt2_v1/NormFactors.pdf}}
+\subfloat[\scriptsize{}]{\includegraphics[width=0.6\textwidth,height=0.7\textheight]{/Users/ploww/HEP/working/Exotics4top/macro/trex-fitter-config/FinalFit/official/FitResults/Slides20200604/BSMRealisticAsimov/FreeFloat/NF_tttt2/BSM_Finalfit_Full_Syst_mH900_HT_RealisticAsimov_NFtttt2_v1/CorrMatrix.pdf}}
+\end{figure}
+\vspace{-0.5cm}
+\begin{figure}
+\centering
+\includegraphics[width=0.2\textwidth,angle=90]{/Users/ploww/HEP/working/Exotics4top/macro/trex-fitter-config/FinalFit/official/FitResults/Slides20200604/BSMRealisticAsimov/FreeFloat/NF_tttt2/BSM_Finalfit_Full_Syst_mH900_HT_RealisticAsimov_NFtttt2_v1/NuisPar.pdf}
+\end{figure}
+\end{frame}
+\begin{frame}{\large{Realistic Asimov HT Fit - mH1000 - Free Float NF\_tttt w/ nominal 2}}
+\vspace{-0.8cm}
+\begin{figure}
+\centering
+\subfloat[\scriptsize{}]{\includegraphics[width=0.38\textwidth,height=0.45\textheight,trim=0 0 6cm 0]{/Users/ploww/HEP/working/Exotics4top/macro/trex-fitter-config/FinalFit/official/FitResults/Slides20200604/BSMRealisticAsimov/FreeFloat/NF_tttt2/BSM_Finalfit_Full_Syst_mH1000_HT_RealisticAsimov_NFtttt2_v1/NormFactors.pdf}}
+\subfloat[\scriptsize{}]{\includegraphics[width=0.6\textwidth,height=0.7\textheight]{/Users/ploww/HEP/working/Exotics4top/macro/trex-fitter-config/FinalFit/official/FitResults/Slides20200604/BSMRealisticAsimov/FreeFloat/NF_tttt2/BSM_Finalfit_Full_Syst_mH1000_HT_RealisticAsimov_NFtttt2_v1/CorrMatrix.pdf}}
+\end{figure}
+\vspace{-0.5cm}
+\begin{figure}
+\centering
+\includegraphics[width=0.2\textwidth,angle=90]{/Users/ploww/HEP/working/Exotics4top/macro/trex-fitter-config/FinalFit/official/FitResults/Slides20200604/BSMRealisticAsimov/FreeFloat/NF_tttt2/BSM_Finalfit_Full_Syst_mH1000_HT_RealisticAsimov_NFtttt2_v1/NuisPar.pdf}
+\end{figure}
+\end{frame}
+\begin{frame}{\large{Realistic Asimov HT Fit - mH400 - 50\% tttt\_Xsec, NF\_tttt=1}}
+\vspace{-0.8cm}
+\begin{figure}
+\centering
+\subfloat[\scriptsize{}]{\includegraphics[width=0.38\textwidth,height=0.45\textheight,trim=0 0 6cm 0]{/Users/ploww/HEP/working/Exotics4top/macro/trex-fitter-config/FinalFit/official/FitResults/Slides20200604/BSMRealisticAsimov/tttt_Xsec_ConstNF_tttt/NF_tttt1/BSM_Finalfit_Full_Syst_mH400_HT_RealisticAsimov_50tttt_Xsec_ConstNFtttt1_v1/NormFactors.pdf}}
+\subfloat[\scriptsize{}]{\includegraphics[width=0.6\textwidth,height=0.7\textheight]{/Users/ploww/HEP/working/Exotics4top/macro/trex-fitter-config/FinalFit/official/FitResults/Slides20200604/BSMRealisticAsimov/tttt_Xsec_ConstNF_tttt/NF_tttt1/BSM_Finalfit_Full_Syst_mH400_HT_RealisticAsimov_50tttt_Xsec_ConstNFtttt1_v1/CorrMatrix.pdf}}
+\end{figure}
+\vspace{-0.5cm}
+\begin{figure}
+\centering
+\includegraphics[width=0.2\textwidth,angle=90]{/Users/ploww/HEP/working/Exotics4top/macro/trex-fitter-config/FinalFit/official/FitResults/Slides20200604/BSMRealisticAsimov/tttt_Xsec_ConstNF_tttt/NF_tttt1/BSM_Finalfit_Full_Syst_mH400_HT_RealisticAsimov_50tttt_Xsec_ConstNFtttt1_v1/NuisPar.pdf}
+\end{figure}
+\end{frame}
+\begin{frame}{\large{Realistic Asimov HT Fit - mH500 - 50\% tttt\_Xsec, NF\_tttt=1}}
+\vspace{-0.8cm}
+\begin{figure}
+\centering
+\subfloat[\scriptsize{}]{\includegraphics[width=0.38\textwidth,height=0.45\textheight,trim=0 0 6cm 0]{/Users/ploww/HEP/working/Exotics4top/macro/trex-fitter-config/FinalFit/official/FitResults/Slides20200604/BSMRealisticAsimov/tttt_Xsec_ConstNF_tttt/NF_tttt1/BSM_Finalfit_Full_Syst_mH500_HT_RealisticAsimov_50tttt_Xsec_ConstNFtttt1_v1/NormFactors.pdf}}
+\subfloat[\scriptsize{}]{\includegraphics[width=0.6\textwidth,height=0.7\textheight]{/Users/ploww/HEP/working/Exotics4top/macro/trex-fitter-config/FinalFit/official/FitResults/Slides20200604/BSMRealisticAsimov/tttt_Xsec_ConstNF_tttt/NF_tttt1/BSM_Finalfit_Full_Syst_mH500_HT_RealisticAsimov_50tttt_Xsec_ConstNFtttt1_v1/CorrMatrix.pdf}}
+\end{figure}
+\vspace{-0.5cm}
+\begin{figure}
+\centering
+\includegraphics[width=0.2\textwidth,angle=90]{/Users/ploww/HEP/working/Exotics4top/macro/trex-fitter-config/FinalFit/official/FitResults/Slides20200604/BSMRealisticAsimov/tttt_Xsec_ConstNF_tttt/NF_tttt1/BSM_Finalfit_Full_Syst_mH500_HT_RealisticAsimov_50tttt_Xsec_ConstNFtttt1_v1/NuisPar.pdf}
+\end{figure}
+\end{frame}
+\begin{frame}{\large{Realistic Asimov HT Fit - mH600 - 50\% tttt\_Xsec, NF\_tttt=1}}
+\vspace{-0.8cm}
+\begin{figure}
+\centering
+\subfloat[\scriptsize{}]{\includegraphics[width=0.38\textwidth,height=0.45\textheight,trim=0 0 6cm 0]{/Users/ploww/HEP/working/Exotics4top/macro/trex-fitter-config/FinalFit/official/FitResults/Slides20200604/BSMRealisticAsimov/tttt_Xsec_ConstNF_tttt/NF_tttt1/BSM_Finalfit_Full_Syst_mH600_HT_RealisticAsimov_50tttt_Xsec_ConstNFtttt1_v1/NormFactors.pdf}}
+\subfloat[\scriptsize{}]{\includegraphics[width=0.6\textwidth,height=0.7\textheight]{/Users/ploww/HEP/working/Exotics4top/macro/trex-fitter-config/FinalFit/official/FitResults/Slides20200604/BSMRealisticAsimov/tttt_Xsec_ConstNF_tttt/NF_tttt1/BSM_Finalfit_Full_Syst_mH600_HT_RealisticAsimov_50tttt_Xsec_ConstNFtttt1_v1/CorrMatrix.pdf}}
+\end{figure}
+\vspace{-0.5cm}
+\begin{figure}
+\centering
+\includegraphics[width=0.2\textwidth,angle=90]{/Users/ploww/HEP/working/Exotics4top/macro/trex-fitter-config/FinalFit/official/FitResults/Slides20200604/BSMRealisticAsimov/tttt_Xsec_ConstNF_tttt/NF_tttt1/BSM_Finalfit_Full_Syst_mH600_HT_RealisticAsimov_50tttt_Xsec_ConstNFtttt1_v1/NuisPar.pdf}
+\end{figure}
+\end{frame}
+\begin{frame}{\large{Realistic Asimov HT Fit - mH700 - 50\% tttt\_Xsec, NF\_tttt=1}}
+\vspace{-0.8cm}
+\begin{figure}
+\centering
+\subfloat[\scriptsize{}]{\includegraphics[width=0.38\textwidth,height=0.45\textheight,trim=0 0 6cm 0]{/Users/ploww/HEP/working/Exotics4top/macro/trex-fitter-config/FinalFit/official/FitResults/Slides20200604/BSMRealisticAsimov/tttt_Xsec_ConstNF_tttt/NF_tttt1/BSM_Finalfit_Full_Syst_mH700_HT_RealisticAsimov_50tttt_Xsec_ConstNFtttt1_v1/NormFactors.pdf}}
+\subfloat[\scriptsize{}]{\includegraphics[width=0.6\textwidth,height=0.7\textheight]{/Users/ploww/HEP/working/Exotics4top/macro/trex-fitter-config/FinalFit/official/FitResults/Slides20200604/BSMRealisticAsimov/tttt_Xsec_ConstNF_tttt/NF_tttt1/BSM_Finalfit_Full_Syst_mH700_HT_RealisticAsimov_50tttt_Xsec_ConstNFtttt1_v1/CorrMatrix.pdf}}
+\end{figure}
+\vspace{-0.5cm}
+\begin{figure}
+\centering
+\includegraphics[width=0.2\textwidth,angle=90]{/Users/ploww/HEP/working/Exotics4top/macro/trex-fitter-config/FinalFit/official/FitResults/Slides20200604/BSMRealisticAsimov/tttt_Xsec_ConstNF_tttt/NF_tttt1/BSM_Finalfit_Full_Syst_mH700_HT_RealisticAsimov_50tttt_Xsec_ConstNFtttt1_v1/NuisPar.pdf}
+\end{figure}
+\end{frame}
+\begin{frame}{\large{Realistic Asimov HT Fit - mH800 - 50\% tttt\_Xsec, NF\_tttt=1}}
+\vspace{-0.8cm}
+\begin{figure}
+\centering
+\subfloat[\scriptsize{}]{\includegraphics[width=0.38\textwidth,height=0.45\textheight,trim=0 0 6cm 0]{/Users/ploww/HEP/working/Exotics4top/macro/trex-fitter-config/FinalFit/official/FitResults/Slides20200604/BSMRealisticAsimov/tttt_Xsec_ConstNF_tttt/NF_tttt1/BSM_Finalfit_Full_Syst_mH800_HT_RealisticAsimov_50tttt_Xsec_ConstNFtttt1_v1/NormFactors.pdf}}
+\subfloat[\scriptsize{}]{\includegraphics[width=0.6\textwidth,height=0.7\textheight]{/Users/ploww/HEP/working/Exotics4top/macro/trex-fitter-config/FinalFit/official/FitResults/Slides20200604/BSMRealisticAsimov/tttt_Xsec_ConstNF_tttt/NF_tttt1/BSM_Finalfit_Full_Syst_mH800_HT_RealisticAsimov_50tttt_Xsec_ConstNFtttt1_v1/CorrMatrix.pdf}}
+\end{figure}
+\vspace{-0.5cm}
+\begin{figure}
+\centering
+\includegraphics[width=0.2\textwidth,angle=90]{/Users/ploww/HEP/working/Exotics4top/macro/trex-fitter-config/FinalFit/official/FitResults/Slides20200604/BSMRealisticAsimov/tttt_Xsec_ConstNF_tttt/NF_tttt1/BSM_Finalfit_Full_Syst_mH800_HT_RealisticAsimov_50tttt_Xsec_ConstNFtttt1_v1/NuisPar.pdf}
+\end{figure}
+\end{frame}
+\begin{frame}{\large{Realistic Asimov HT Fit - mH900 - 50\% tttt\_Xsec, NF\_tttt=1}}
+\vspace{-0.8cm}
+\begin{figure}
+\centering
+\subfloat[\scriptsize{}]{\includegraphics[width=0.38\textwidth,height=0.45\textheight,trim=0 0 6cm 0]{/Users/ploww/HEP/working/Exotics4top/macro/trex-fitter-config/FinalFit/official/FitResults/Slides20200604/BSMRealisticAsimov/tttt_Xsec_ConstNF_tttt/NF_tttt1/BSM_Finalfit_Full_Syst_mH900_HT_RealisticAsimov_50tttt_Xsec_ConstNFtttt1_v1/NormFactors.pdf}}
+\subfloat[\scriptsize{}]{\includegraphics[width=0.6\textwidth,height=0.7\textheight]{/Users/ploww/HEP/working/Exotics4top/macro/trex-fitter-config/FinalFit/official/FitResults/Slides20200604/BSMRealisticAsimov/tttt_Xsec_ConstNF_tttt/NF_tttt1/BSM_Finalfit_Full_Syst_mH900_HT_RealisticAsimov_50tttt_Xsec_ConstNFtttt1_v1/CorrMatrix.pdf}}
+\end{figure}
+\vspace{-0.5cm}
+\begin{figure}
+\centering
+\includegraphics[width=0.2\textwidth,angle=90]{/Users/ploww/HEP/working/Exotics4top/macro/trex-fitter-config/FinalFit/official/FitResults/Slides20200604/BSMRealisticAsimov/tttt_Xsec_ConstNF_tttt/NF_tttt1/BSM_Finalfit_Full_Syst_mH900_HT_RealisticAsimov_50tttt_Xsec_ConstNFtttt1_v1/NuisPar.pdf}
+\end{figure}
+\end{frame}
+\begin{frame}{\large{Realistic Asimov HT Fit - mH1000 - 50\% tttt\_Xsec, NF\_tttt=1}}
+\vspace{-0.8cm}
+\begin{figure}
+\centering
+\subfloat[\scriptsize{}]{\includegraphics[width=0.38\textwidth,height=0.45\textheight,trim=0 0 6cm 0]{/Users/ploww/HEP/working/Exotics4top/macro/trex-fitter-config/FinalFit/official/FitResults/Slides20200604/BSMRealisticAsimov/tttt_Xsec_ConstNF_tttt/NF_tttt1/BSM_Finalfit_Full_Syst_mH1000_HT_RealisticAsimov_50tttt_Xsec_ConstNFtttt1_v1/NormFactors.pdf}}
+\subfloat[\scriptsize{}]{\includegraphics[width=0.6\textwidth,height=0.7\textheight]{/Users/ploww/HEP/working/Exotics4top/macro/trex-fitter-config/FinalFit/official/FitResults/Slides20200604/BSMRealisticAsimov/tttt_Xsec_ConstNF_tttt/NF_tttt1/BSM_Finalfit_Full_Syst_mH1000_HT_RealisticAsimov_50tttt_Xsec_ConstNFtttt1_v1/CorrMatrix.pdf}}
+\end{figure}
+\vspace{-0.5cm}
+\begin{figure}
+\centering
+\includegraphics[width=0.2\textwidth,angle=90]{/Users/ploww/HEP/working/Exotics4top/macro/trex-fitter-config/FinalFit/official/FitResults/Slides20200604/BSMRealisticAsimov/tttt_Xsec_ConstNF_tttt/NF_tttt1/BSM_Finalfit_Full_Syst_mH1000_HT_RealisticAsimov_50tttt_Xsec_ConstNFtttt1_v1/NuisPar.pdf}
+\end{figure}
+\end{frame}
+\begin{frame}{\large{Realistic Asimov HT Fit - mH400 - 50\% tttt\_Xsec, NF\_tttt=2}}
+\vspace{-0.8cm}
+\begin{figure}
+\centering
+\subfloat[\scriptsize{}]{\includegraphics[width=0.38\textwidth,height=0.45\textheight,trim=0 0 6cm 0]{/Users/ploww/HEP/working/Exotics4top/macro/trex-fitter-config/FinalFit/official/FitResults/Slides20200604/BSMRealisticAsimov/tttt_Xsec_ConstNF_tttt/NF_tttt2/BSM_Finalfit_Full_Syst_mH400_HT_RealisticAsimov_50tttt_Xsec_ConstNFtttt2_v1/NormFactors.pdf}}
+\subfloat[\scriptsize{}]{\includegraphics[width=0.6\textwidth,height=0.7\textheight]{/Users/ploww/HEP/working/Exotics4top/macro/trex-fitter-config/FinalFit/official/FitResults/Slides20200604/BSMRealisticAsimov/tttt_Xsec_ConstNF_tttt/NF_tttt2/BSM_Finalfit_Full_Syst_mH400_HT_RealisticAsimov_50tttt_Xsec_ConstNFtttt2_v1/CorrMatrix.pdf}}
+\end{figure}
+\vspace{-0.5cm}
+\begin{figure}
+\centering
+\includegraphics[width=0.2\textwidth,angle=90]{/Users/ploww/HEP/working/Exotics4top/macro/trex-fitter-config/FinalFit/official/FitResults/Slides20200604/BSMRealisticAsimov/tttt_Xsec_ConstNF_tttt/NF_tttt2/BSM_Finalfit_Full_Syst_mH400_HT_RealisticAsimov_50tttt_Xsec_ConstNFtttt2_v1/NuisPar.pdf}
+\end{figure}
+\end{frame}
+\begin{frame}{\large{Realistic Asimov HT Fit - mH500 - 50\% tttt\_Xsec, NF\_tttt=2}}
+\vspace{-0.8cm}
+\begin{figure}
+\centering
+\subfloat[\scriptsize{}]{\includegraphics[width=0.38\textwidth,height=0.45\textheight,trim=0 0 6cm 0]{/Users/ploww/HEP/working/Exotics4top/macro/trex-fitter-config/FinalFit/official/FitResults/Slides20200604/BSMRealisticAsimov/tttt_Xsec_ConstNF_tttt/NF_tttt2/BSM_Finalfit_Full_Syst_mH500_HT_RealisticAsimov_50tttt_Xsec_ConstNFtttt2_v1/NormFactors.pdf}}
+\subfloat[\scriptsize{}]{\includegraphics[width=0.6\textwidth,height=0.7\textheight]{/Users/ploww/HEP/working/Exotics4top/macro/trex-fitter-config/FinalFit/official/FitResults/Slides20200604/BSMRealisticAsimov/tttt_Xsec_ConstNF_tttt/NF_tttt2/BSM_Finalfit_Full_Syst_mH500_HT_RealisticAsimov_50tttt_Xsec_ConstNFtttt2_v1/CorrMatrix.pdf}}
+\end{figure}
+\vspace{-0.5cm}
+\begin{figure}
+\centering
+\includegraphics[width=0.2\textwidth,angle=90]{/Users/ploww/HEP/working/Exotics4top/macro/trex-fitter-config/FinalFit/official/FitResults/Slides20200604/BSMRealisticAsimov/tttt_Xsec_ConstNF_tttt/NF_tttt2/BSM_Finalfit_Full_Syst_mH500_HT_RealisticAsimov_50tttt_Xsec_ConstNFtttt2_v1/NuisPar.pdf}
+\end{figure}
+\end{frame}
+\begin{frame}{\large{Realistic Asimov HT Fit - mH600 - 50\% tttt\_Xsec, NF\_tttt=2}}
+\vspace{-0.8cm}
+\begin{figure}
+\centering
+\subfloat[\scriptsize{}]{\includegraphics[width=0.38\textwidth,height=0.45\textheight,trim=0 0 6cm 0]{/Users/ploww/HEP/working/Exotics4top/macro/trex-fitter-config/FinalFit/official/FitResults/Slides20200604/BSMRealisticAsimov/tttt_Xsec_ConstNF_tttt/NF_tttt2/BSM_Finalfit_Full_Syst_mH600_HT_RealisticAsimov_50tttt_Xsec_ConstNFtttt2_v1/NormFactors.pdf}}
+\subfloat[\scriptsize{}]{\includegraphics[width=0.6\textwidth,height=0.7\textheight]{/Users/ploww/HEP/working/Exotics4top/macro/trex-fitter-config/FinalFit/official/FitResults/Slides20200604/BSMRealisticAsimov/tttt_Xsec_ConstNF_tttt/NF_tttt2/BSM_Finalfit_Full_Syst_mH600_HT_RealisticAsimov_50tttt_Xsec_ConstNFtttt2_v1/CorrMatrix.pdf}}
+\end{figure}
+\vspace{-0.5cm}
+\begin{figure}
+\centering
+\includegraphics[width=0.2\textwidth,angle=90]{/Users/ploww/HEP/working/Exotics4top/macro/trex-fitter-config/FinalFit/official/FitResults/Slides20200604/BSMRealisticAsimov/tttt_Xsec_ConstNF_tttt/NF_tttt2/BSM_Finalfit_Full_Syst_mH600_HT_RealisticAsimov_50tttt_Xsec_ConstNFtttt2_v1/NuisPar.pdf}
+\end{figure}
+\end{frame}
+\begin{frame}{\large{Realistic Asimov HT Fit - mH700 - 50\% tttt\_Xsec, NF\_tttt=2}}
+\vspace{-0.8cm}
+\begin{figure}
+\centering
+\subfloat[\scriptsize{}]{\includegraphics[width=0.38\textwidth,height=0.45\textheight,trim=0 0 6cm 0]{/Users/ploww/HEP/working/Exotics4top/macro/trex-fitter-config/FinalFit/official/FitResults/Slides20200604/BSMRealisticAsimov/tttt_Xsec_ConstNF_tttt/NF_tttt2/BSM_Finalfit_Full_Syst_mH700_HT_RealisticAsimov_50tttt_Xsec_ConstNFtttt2_v1/NormFactors.pdf}}
+\subfloat[\scriptsize{}]{\includegraphics[width=0.6\textwidth,height=0.7\textheight]{/Users/ploww/HEP/working/Exotics4top/macro/trex-fitter-config/FinalFit/official/FitResults/Slides20200604/BSMRealisticAsimov/tttt_Xsec_ConstNF_tttt/NF_tttt2/BSM_Finalfit_Full_Syst_mH700_HT_RealisticAsimov_50tttt_Xsec_ConstNFtttt2_v1/CorrMatrix.pdf}}
+\end{figure}
+\vspace{-0.5cm}
+\begin{figure}
+\centering
+\includegraphics[width=0.2\textwidth,angle=90]{/Users/ploww/HEP/working/Exotics4top/macro/trex-fitter-config/FinalFit/official/FitResults/Slides20200604/BSMRealisticAsimov/tttt_Xsec_ConstNF_tttt/NF_tttt2/BSM_Finalfit_Full_Syst_mH700_HT_RealisticAsimov_50tttt_Xsec_ConstNFtttt2_v1/NuisPar.pdf}
+\end{figure}
+\end{frame}
+\begin{frame}{\large{Realistic Asimov HT Fit - mH800 - 50\% tttt\_Xsec, NF\_tttt=2}}
+\vspace{-0.8cm}
+\begin{figure}
+\centering
+\subfloat[\scriptsize{}]{\includegraphics[width=0.38\textwidth,height=0.45\textheight,trim=0 0 6cm 0]{/Users/ploww/HEP/working/Exotics4top/macro/trex-fitter-config/FinalFit/official/FitResults/Slides20200604/BSMRealisticAsimov/tttt_Xsec_ConstNF_tttt/NF_tttt2/BSM_Finalfit_Full_Syst_mH800_HT_RealisticAsimov_50tttt_Xsec_ConstNFtttt2_v1/NormFactors.pdf}}
+\subfloat[\scriptsize{}]{\includegraphics[width=0.6\textwidth,height=0.7\textheight]{/Users/ploww/HEP/working/Exotics4top/macro/trex-fitter-config/FinalFit/official/FitResults/Slides20200604/BSMRealisticAsimov/tttt_Xsec_ConstNF_tttt/NF_tttt2/BSM_Finalfit_Full_Syst_mH800_HT_RealisticAsimov_50tttt_Xsec_ConstNFtttt2_v1/CorrMatrix.pdf}}
+\end{figure}
+\vspace{-0.5cm}
+\begin{figure}
+\centering
+\includegraphics[width=0.2\textwidth,angle=90]{/Users/ploww/HEP/working/Exotics4top/macro/trex-fitter-config/FinalFit/official/FitResults/Slides20200604/BSMRealisticAsimov/tttt_Xsec_ConstNF_tttt/NF_tttt2/BSM_Finalfit_Full_Syst_mH800_HT_RealisticAsimov_50tttt_Xsec_ConstNFtttt2_v1/NuisPar.pdf}
+\end{figure}
+\end{frame}
+\begin{frame}{\large{Realistic Asimov HT Fit - mH900 - 50\% tttt\_Xsec, NF\_tttt=2}}
+\vspace{-0.8cm}
+\begin{figure}
+\centering
+\subfloat[\scriptsize{}]{\includegraphics[width=0.38\textwidth,height=0.45\textheight,trim=0 0 6cm 0]{/Users/ploww/HEP/working/Exotics4top/macro/trex-fitter-config/FinalFit/official/FitResults/Slides20200604/BSMRealisticAsimov/tttt_Xsec_ConstNF_tttt/NF_tttt2/BSM_Finalfit_Full_Syst_mH900_HT_RealisticAsimov_50tttt_Xsec_ConstNFtttt2_v1/NormFactors.pdf}}
+\subfloat[\scriptsize{}]{\includegraphics[width=0.6\textwidth,height=0.7\textheight]{/Users/ploww/HEP/working/Exotics4top/macro/trex-fitter-config/FinalFit/official/FitResults/Slides20200604/BSMRealisticAsimov/tttt_Xsec_ConstNF_tttt/NF_tttt2/BSM_Finalfit_Full_Syst_mH900_HT_RealisticAsimov_50tttt_Xsec_ConstNFtttt2_v1/CorrMatrix.pdf}}
+\end{figure}
+\vspace{-0.5cm}
+\begin{figure}
+\centering
+\includegraphics[width=0.2\textwidth,angle=90]{/Users/ploww/HEP/working/Exotics4top/macro/trex-fitter-config/FinalFit/official/FitResults/Slides20200604/BSMRealisticAsimov/tttt_Xsec_ConstNF_tttt/NF_tttt2/BSM_Finalfit_Full_Syst_mH900_HT_RealisticAsimov_50tttt_Xsec_ConstNFtttt2_v1/NuisPar.pdf}
+\end{figure}
+\end{frame}
+\begin{frame}{\large{Realistic Asimov HT Fit - mH1000 - 50\% tttt\_Xsec, NF\_tttt=2}}
+\vspace{-0.8cm}
+\begin{figure}
+\centering
+\subfloat[\scriptsize{}]{\includegraphics[width=0.38\textwidth,height=0.45\textheight,trim=0 0 6cm 0]{/Users/ploww/HEP/working/Exotics4top/macro/trex-fitter-config/FinalFit/official/FitResults/Slides20200604/BSMRealisticAsimov/tttt_Xsec_ConstNF_tttt/NF_tttt2/BSM_Finalfit_Full_Syst_mH1000_HT_RealisticAsimov_50tttt_Xsec_ConstNFtttt2_v1/NormFactors.pdf}}
+\subfloat[\scriptsize{}]{\includegraphics[width=0.6\textwidth,height=0.7\textheight]{/Users/ploww/HEP/working/Exotics4top/macro/trex-fitter-config/FinalFit/official/FitResults/Slides20200604/BSMRealisticAsimov/tttt_Xsec_ConstNF_tttt/NF_tttt2/BSM_Finalfit_Full_Syst_mH1000_HT_RealisticAsimov_50tttt_Xsec_ConstNFtttt2_v1/CorrMatrix.pdf}}
+\end{figure}
+\vspace{-0.5cm}
+\begin{figure}
+\centering
+\includegraphics[width=0.2\textwidth,angle=90]{/Users/ploww/HEP/working/Exotics4top/macro/trex-fitter-config/FinalFit/official/FitResults/Slides20200604/BSMRealisticAsimov/tttt_Xsec_ConstNF_tttt/NF_tttt2/BSM_Finalfit_Full_Syst_mH1000_HT_RealisticAsimov_50tttt_Xsec_ConstNFtttt2_v1/NuisPar.pdf}
+\end{figure}
+\end{frame}
+\begin{frame}
+\centering
+\textbf{Backup}
+\end{frame}
+
+\end{document}

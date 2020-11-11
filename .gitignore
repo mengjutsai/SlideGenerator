@@ -7,4 +7,12 @@ script/*
 *snm*
 *.toc*
 *.DS*
+slides/*/*pyc*
+slides/*/*aux*
+slides/*/*log*
+slides/*/*nav*
+slides/*/*.out*
+slides/*/*.tex*
+slides/*/*snm*
+slides/*/*toc*
 
