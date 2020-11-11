@@ -13,7 +13,7 @@ from bookingSlides import *
 
 # import package from filename: https://stackoverflow.com/questions/67631/how-to-import-a-module-given-the-full-path
 import imp
-from slides.slides_20201109_object_mig.dictionary import *
+# from slides.slides_20201109_object_mig.dictionary import *
 
 # import
 
