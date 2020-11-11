@@ -90,7 +90,8 @@ def main():
         # os.system("lualatex "+outputPath+"Validation.tex")
         # os.system("pdflatex  "+outputPath+"Validation.tex")
         os.chdir(outputPath)
-        os.system("lualatex -halt-on-error "+outputfile)
+        # os.system("lualatex -halt-on-error "+outputfile)
+        os.system("pdflatex -halt-on-error "+outputfile)
 
     else:
         print("No compile")
