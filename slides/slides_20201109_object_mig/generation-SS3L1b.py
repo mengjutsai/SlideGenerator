@@ -186,7 +186,7 @@ Dict_NewVar = {"nJets": "both",
 
 
 
-def plot(outF,inputFolder):
+def plot(outF,inputFolder=""):
 
     # print(Dict_new_selection.keys(),Dict_samples.keys())
     sel = "SS3L1b"
