@@ -1,4 +1,4 @@
-script/trunk/
+script/*
 *pyc*
 *aux*
 *log*
@@ -6,3 +6,5 @@ script/trunk/
 *.out*
 *snm*
 *.toc*
+*.DS*
+
