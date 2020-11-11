@@ -16,3 +16,4 @@ slides/**/*.tex*
 slides/**/*snm*
 slides/**/*toc*
 slides/**/*pdf*
+**tmp*
