@@ -1,4 +1,5 @@
 # -*- coding: utf-8 -*-
+# from dictionary import *
 
 def make_general_structure(outF, File_title = "Recent Work"):
     #write the tex file
@@ -13,6 +14,16 @@ def make_general_structure(outF, File_title = "Recent Work"):
     # outF.write("\\usepackage[hidelinks]{hyperref}\n")
     outF.write("\\usepackage{standalone}\n")
     outF.write("\\usepackage{tikz}\n")
+
+    # https://tex.stackexchange.com/questions/7953/how-to-expand-texs-main-memory-size-pgfplots-memory-overload
+
+    outF.write("\\usepackage{pgfplots}\n")
+    # outF.write("\\usepgfplotslibrary{external} \n")
+    outF.write("\\usetikzlibrary{patterns} \n")
+    outF.write("\\usetikzlibrary{external} \n")
+    outF.write("\\tikzexternalize\n")
+    # outF.write("\\tikzset{external/force remake}\n")
+
     # outF.write("%\\usepackage{underscore}\n")#this package seems not working
     outF.write("\\usepackage{hyperref}\n")
     outF.write("\\captionsetup[subfloat]{captionskip=0.1pt, labelformat=empty, position=top}\n")
@@ -42,18 +53,21 @@ def make_general_structure(outF, File_title = "Recent Work"):
 
 
 def make_6plots(outF, title, variable, file_path):
+    # print(variable)
     outF.write("\\begin{frame}{"+title+"}\n")
     outF.write("\\vspace{-1cm}\n")
     outF.write("\\begin{figure}\n\\centering\n")
     variable_name = []
     for i in range(0,3):
-        variable_name = variable[i].replace("_","-")
-        outF.write("\subfloat[\\scriptsize{"+variable_name+"}]{\\includegraphics[width=0.35\\textwidth,height=0.4\\textheight]{"+file_path+variable[i]+".pdf"+"}}\n")
+        variable_name = variable[i].replace("_","\\_")
+        # outF.write("\subfloat[\\scriptsize{"+variable_name+"}]{\\includegraphics[width=0.35\\textwidth,height=0.4\\textheight]{"+file_path+variable[i]+".pdf"+"}}\n")
+        outF.write("\subfloat[]{\\includegraphics[width=0.35\\textwidth,height=0.4\\textheight]{"+file_path+variable[i]+".pdf"+"}}\n")
     outF.write("\\end{figure}\n\\vspace{-0.8cm}\n")
     outF.write("\\begin{figure}\n\\centering\n")
     for i in range(3,6):
-        variable_name = variable[i].replace("_","-")
-        outF.write("\subfloat[\\scriptsize{"+variable_name+"}]{\\includegraphics[width=0.35\\textwidth,height=0.4\\textheight]{"+file_path+variable[i]+".pdf"+"}}\n")
+        variable_name = variable[i].replace("_","\\_")
+        # outF.write("\subfloat[\\scriptsize{"+variable_name+"}]{\\includegraphics[width=0.35\\textwidth,height=0.4\\textheight]{"+file_path+variable[i]+".pdf"+"}}\n")
+        outF.write("\subfloat[]{\\includegraphics[width=0.35\\textwidth,height=0.4\\textheight]{"+file_path+variable[i]+".pdf"+"}}\n")
     outF.write("\\end{figure}\n")
     outF.write("\\end{frame}\n")
 
@@ -96,8 +110,8 @@ def make_3plots(outF, title, variable, file_path):
     outF.write("\\begin{figure}\n\\centering\n")
     variable_name = []
     for i in range(0,3):
-        variable_name = variable[i].replace("_","-")
-        outF.write("\subfloat[\\scriptsize{"+variable_name+"}]{\\includegraphics[width=0.35\\textwidth,height=0.42\\textheight]{"+file_path+variable[i]+".pdf"+"}}\n")
+        variable_name = variable[i].replace("_","\\_")
+        outF.write("\subfloat[]{\\includegraphics[width=0.35\\textwidth,height=0.42\\textheight]{"+file_path+variable[i]+".pdf"+"}}\n")
     outF.write("\\end{figure}\n")
     outF.write("\\end{frame}\n")
 
@@ -107,8 +121,9 @@ def make_2plots(outF, title, variable, file_path):
     outF.write("\\begin{figure}\n\\centering\n")
     variable_name = []
     for i in range(0,2):
-        variable_name = variable[i].replace("_","-")
-        outF.write("\subfloat[\\scriptsize{"+variable_name+"}]{\\includegraphics[width=0.45\\textwidth,height=0.4\\textheight]{"+file_path+variable[i]+".pdf"+"}}\n")
+        variable_name = variable[i].replace("_","\\_")
+        # outF.write("\subfloat[\\scriptsize{"+variable_name+"}]{\\includegraphics[width=0.45\\textwidth,height=0.4\\textheight]{"+file_path+variable[i]+".pdf"+"}}\n")
+        outF.write("\subfloat[]{\\includegraphics[width=0.45\\textwidth,height=0.4\\textheight]{"+file_path+variable[i]+".pdf"+"}}\n")
     outF.write("\\end{figure}\n")
     outF.write("\\end{frame}\n")
 
@@ -140,7 +155,7 @@ def make_FitResults(outF, title, variable, file_path):
     outF.write("\\end{frame}\n")
 
 def make_MVAResults(outF, title, file_path):
-    print(title)
+    # print(title)
     if("_" in title):
         title = title.replace('_','\\_')
     outF.write("\\begin{frame}{"+title+"}\n")
