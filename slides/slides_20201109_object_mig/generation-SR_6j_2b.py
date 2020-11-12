@@ -1,5 +1,5 @@
 from bookingSlides import *
-
+from dictionary import *
 
 def plot(outF,inputFolder=""):
 

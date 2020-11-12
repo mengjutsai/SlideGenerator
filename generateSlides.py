@@ -11,6 +11,8 @@ from os.path import isfile, join, getsize
 from os import walk
 from bookingSlides import *
 from dictionary import *
+
+
 # import package from filename: https://stackoverflow.com/questions/67631/how-to-import-a-module-given-the-full-path
 import imp
 # from slides.slides_20201109_object_mig.dictionary import *
