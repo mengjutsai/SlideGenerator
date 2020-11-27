@@ -2,7 +2,7 @@ from bookingSlides import *
 from dictionary import *
 import glob
 
-def plot(outF,inputFolder="",subfolder):
+def plot(outF,subfolder,inputFolder=""):
     outF.write('\\begin{center}{'+subfolder.split("\\")[-2]+'}\\end{center}\n')
     # outF.write('\\Section{'+subfolder.split("\\")[-2]+'}\n')
     outF.write('\\begin{center}{'+subfolder.split("\\")[-1]+'}\\end{center}\n')
@@ -38,7 +38,7 @@ def plot(outF,inputFolder="",subfolder):
 
 def main(outF,inputFolder):
     subfolder = "validation_pBDT_binary_official_NTree1000_allBKG_nominal/separation/"
-    plot(outF,inputFolder,subfolder)
+    plot(outF,subfolder,inputFolder)
 
 
 
