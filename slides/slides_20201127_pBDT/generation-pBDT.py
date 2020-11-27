@@ -2,52 +2,43 @@ from bookingSlides import *
 from dictionary import *
 import glob
 
-def plot(outF,inputFolder=""):
+def plot(outF,inputFolder="",subfolder):
+    outF.write('\\begin{center}{'+subfolder.split("\\")[-2]+'}\\end{center}\n')
+    # outF.write('\\Section{'+subfolder.split("\\")[-2]+'}\n')
+    outF.write('\\begin{center}{'+subfolder.split("\\")[-1]+'}\\end{center}\n')
+    dict = glob.glob(inputFolder+subfolder)
 
-    dict = glob.glob(inputFolder+"vali*/sta*")
-    # dir = "SR_6j_2b"
-    # print(dict)
     fileList = []
     for folder in dict:
-        # print(folder)
-        fileList.append(folder+"/"+"stackplot_pBDT400_multiclass_cat_even_test_odd_allEvent.pdf")
-    # print(fileList)
-    # slide1 = len(fileList) / 6
-    remain = len(fileList) % 6
+        fileList.append(folder)
+
+    fileList = sorted(fileList)
+
+    lastRow = len(fileList)/3
+    remain = len(fileList) % 3
 
     for ifile, file in enumerate(fileList):
-        
+        filename = file.split("\\")[-1]
+        caption = filename
+        caption = caption.replace('_','\\_')
 
-        # if "6p" in plot:
-        #     make_6plots(outF, Title,VarList,inputFolder+sel+"/")
+        if ifile%3==0:
+            PlotBegin(outF)
 
-                # if ',' in file:
-                #     suffix = file.split(',')[1]
-                # else:
-                #     suffix = ''
-                #
-                # if len(suffix)>0:
-                #     Title = "\large{"+sel+":"+file.split('.')[0]+":"+suffix+":"+campaign+"}"
-                #     VarList = [campaign+"_"+file.split('.')[0]+"_"+suffix+"_new_"+item+"_old_"+NewOld_var[item] for item in plot_dict[plot]]
-                # else:
-                #     Title = "\large{"+sel+":"+file.split('.')[0]+":"+campaign+"}"
-                #     VarList = [campaign+"_"+file.split('.')[0]+"__new_"+item+"_old_"+NewOld_var[item] for item in plot_dict[plot]]
-                #
-                #
-                # Title = Title.replace('_','\\_')
-                #
-                # # print(Title)
-                #
-                # if "6p" in plot:
-                #     make_6plots(outF, Title,VarList,inputFolder+sel+"/")
-                # elif "2p" in plot:
-                #     make_2plots(outF, Title,VarList,inputFolder+sel+"/")
-                # elif "3p" in plot:
-                #     make_3plots(outF, Title,VarList,inputFolder+sel+"/")
+        MakePlot(outF,file,caption)
+
+        if ifile%3 == 2:
+            PlotEnd(outF)
+            outF.write('\n')
+
+        if remain!=0 and ifile > 3*lastRow-1:
+            PlotEnd(outF)
+            outF.write('\n')
 
 
-
-
+def main(outF,inputFolder):
+    subfolder = "validation_pBDT_binary_official_NTree1000_allBKG_nominal/separation/"
+    plot(outF,inputFolder,subfolder):
 
 
 

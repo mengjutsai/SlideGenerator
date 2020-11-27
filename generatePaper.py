@@ -71,42 +71,47 @@ def main():
     files_list = []
     hist_list = []
 
-    bookPaper(outF, "stackplot")
+    bookPaper(outF, "pBDT")
 
     # make_frame(outF, "Results")
 
     input = args.input
     inputFolder = args.inputFolder
-    dict = glob.glob(inputFolder+"vali*/sta*")
 
-    fileList = []
-    for folder in dict:
-        fileList.append(folder+"/"+"stackplot_pBDT400_multiclass_cat_even_test_odd_allEvent.pdf")
 
-    fileList = sorted(fileList)
+    func = imp.load_source('plotting', input)
+    func.main(outF,inputFolder)
 
-    lastRow = len(fileList)/3
-    remain = len(fileList) % 3
-
-    for ifile, file in enumerate(fileList):
-        filename = "stackplot_pBDT400_multiclass_cat_even_test_odd_allEvent"
-        weight = file.split("ClassWeight_")[1].split('/')[0]
-        caption = filename + " and weight is " + weight
-        caption = caption.replace('_','\\_')
-
-        if ifile%3==0:
-            PlotBegin(outF)
-
-        MakePlot(outF,file,caption)
-
-        if ifile%3 == 2:
-            PlotEnd(outF)
-            outF.write('\n')
-
-        if remain!=0 and ifile > 3*lastRow-1:
-            PlotEnd(outF)
-            outF.write('\n')
-
+    # dict = glob.glob(inputFolder+"vali*/sta*")
+    #
+    # fileList = []
+    # for folder in dict:
+    #     fileList.append(folder+"/"+"stackplot_pBDT400_multiclass_cat_even_test_odd_allEvent.pdf")
+    #
+    # fileList = sorted(fileList)
+    #
+    # lastRow = len(fileList)/3
+    # remain = len(fileList) % 3
+    #
+    # for ifile, file in enumerate(fileList):
+    #     filename = "stackplot_pBDT400_multiclass_cat_even_test_odd_allEvent"
+    #     weight = file.split("ClassWeight_")[1].split('/')[0]
+    #     caption = filename + " and weight is " + weight
+    #     caption = caption.replace('_','\\_')
+    #
+    #     if ifile%3==0:
+    #         PlotBegin(outF)
+    #
+    #     MakePlot(outF,file,caption)
+    #
+    #     if ifile%3 == 2:
+    #         PlotEnd(outF)
+    #         outF.write('\n')
+    #
+    #     if remain!=0 and ifile > 3*lastRow-1:
+    #         PlotEnd(outF)
+    #         outF.write('\n')
+    #
 
         # if ifile%9 == 8:
         #     PlotEnd(outF)
