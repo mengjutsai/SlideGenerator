@@ -89,13 +89,20 @@ def main():
         caption = filename + " and weight is " + weight
         caption = caption.replace('_','\\_')
         MakePlot(outF,file,caption)
+
         if ifile==0:
-            pass
-        elif ifile>0 and ifile%3 == 2:
+            PlotBegin(outF)
+        elif ifile%3 == 2:
+            PlotEnd(outF)
             outF.write('\n')
 
-        if ifile%9 ==8:
-            outF.write('\\newpage')
+        # if ifile%9 == 8:
+        #     PlotEnd(outF)
+        #     outF.write('\\newpage')
+        # else:
+        #     PlotBegin(outF)
+        #     if ifile%3 == 2:
+        #         PlotBegin
 
     endPaper(outF)
 

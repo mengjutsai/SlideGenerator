@@ -205,7 +205,13 @@ def bookPaper(outF, File_title = "Recent Work"):
     outF.write("\\author{Meng-Ju Tsai}\n")
     outF.write("\\begin{document}\n")
     outF.write("\\maketitle\n")
+
+
+
+def PlotBegin(outF):
     outF.write("\\begin{figure}\n\\centering\n")
+def PlotEnd(outF):
+    outF.write("\\end{figure}\n")
 
 def MakePlot(outF,file,caption):
     outF.write("\subfloat["+caption+"]{\\includegraphics[width=0.35\\textwidth]{"+file+"}}\n")
@@ -214,6 +220,5 @@ def MakePlot(outF,file,caption):
 
 
 def endPaper(outF):
-    outF.write("\\end{figure}\n")
     outF.write("\n\end{document}\n")
     outF.close()
