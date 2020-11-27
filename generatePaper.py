@@ -89,6 +89,10 @@ def main():
         caption = filename + " and weight is " + weight
         caption = caption.replace('_','\\_')
         MakePlot(outF,file,caption)
+        if ifile==0:
+            pass
+        elif ifile>0 and ifile%2 ==0:
+            outF.write('\n')
 
     endPaper(outF)
 

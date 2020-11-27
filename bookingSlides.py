@@ -207,7 +207,7 @@ def bookPaper(outF, File_title = "Recent Work"):
     outF.write("\\begin{figure}\n\\centering\n")
 
 def MakePlot(outF,file,caption):
-    outF.write("\subfloat["+caption+"]{\\includegraphics[width=0.35\\textwidth]{"+file+"}}\n\n")
+    outF.write("\subfloat["+caption+"]{\\includegraphics[width=0.35\\textwidth]{"+file+"}}\n")
     # outF.write("\\includegraphics[width=0.7\\textwidth]{"+file+"}\n")
     # outF.write("\\caption{"+caption+"}\n")
 
