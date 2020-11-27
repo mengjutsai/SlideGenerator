@@ -3,8 +3,8 @@ from dictionary import *
 import glob
 
 def plot(outF,subfolder,inputFolder=""):
-    outF.write('\\begin{center}\n{'+subfolder.split("/")[-3].replace('_','\\')+'}\n \\end{center}\n')
-    outF.write('\\begin{center}\n{'+subfolder.split("/")[-2].replace('_','\\')+'}\n \\end{center}\n')
+    outF.write('\\begin{center}\n{'+subfolder.split("/")[-3].replace('_','\\_')+'}\n \\end{center}\n')
+    outF.write('\\begin{center}\n{'+subfolder.split("/")[-2].replace('_','\\_')+'}\n \\end{center}\n')
 
     list = glob.glob(inputFolder+subfolder+'*')
 
