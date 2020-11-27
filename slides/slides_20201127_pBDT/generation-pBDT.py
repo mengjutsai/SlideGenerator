@@ -3,9 +3,9 @@ from dictionary import *
 import glob
 
 def plot(outF,subfolder,inputFolder=""):
-    outF.write('\\begin{center}{'+subfolder.split("/")[-3]+'}\\end{center}\n')
+    outF.write('\\begin{center}{'+subfolder.split("/")[-3].replace('_','\\')+'}\\end{center}\n')
     # outF.write('\\Section{'+subfolder.split("/")[-2]+'}\n')
-    outF.write('\\begin{center}{'+subfolder.split("/")[-2]+'}\\end{center}\n')
+    outF.write('\\begin{center}{'+subfolder.split("/")[-2].replace('_','\\')+'}\\end{center}\n')
     dict = glob.glob(inputFolder+subfolder)
 
     fileList = []
@@ -18,9 +18,10 @@ def plot(outF,subfolder,inputFolder=""):
     remain = len(fileList) % 3
 
     for ifile, file in enumerate(fileList):
-        filename = file.split("/")[-1]
+        filename = file.split("/")[-1].replace('_','\\')
         caption = filename
         caption = caption.replace('_','\\_')
+        print(caption)
 
         if ifile%3==0:
             PlotBegin(outF)
