@@ -3,7 +3,7 @@ from dictionary import *
 import glob
 
 def plot(outF,subfolder,inputFolder=""):
-    outF.write('\\subsection{'+subfolder.split("/")[-].replace('_','\\_')+'}\n')
+    outF.write('\\subsection{'+subfolder.split("/")[-2].replace('_','\\_')+'}\n')
 
     list = glob.glob(inputFolder+subfolder+'*')
 
