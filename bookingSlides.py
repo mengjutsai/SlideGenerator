@@ -209,7 +209,7 @@ def bookPaper(outF, File_title = "Recent Work"):
 
 
 def PlotBegin(outF):
-    outF.write("\\begin{figure}\n\\centering\n")
+    outF.write("\\begin{figure}[h]\n\\centering\n")
 def PlotEnd(outF):
     outF.write("\\end{figure}\n")
 
