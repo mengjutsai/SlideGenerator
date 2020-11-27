@@ -203,7 +203,7 @@ def bookPaper(outF, File_title = "Recent Work"):
     outF.write("\\begin{document}\n")
     outF.write("\\maketitle\n")
 
-def MakePlot(file,caption):
+def MakePlot(outF,file,caption):
     outF.write("\\begin{figure}\n\\centering\n")
     outF.write("\\includegraphics[width=0.7\\textwidth]{"+file+"}\n")
     outF.write("\\caption{"+caption+"}\n")

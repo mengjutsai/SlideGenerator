@@ -87,7 +87,7 @@ def main():
         filename = "stackplot_pBDT400_multiclass_cat_even_test_odd_allEvent"
         weight = file.split("ClassWeight_")[1]
         caption = filename + " and weight is " + weight
-        MakePlot(file,caption)
+        MakePlot(outF,file,caption)
 
     endPaper(outF)
 
