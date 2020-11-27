@@ -88,11 +88,13 @@ def main():
         weight = file.split("ClassWeight_")[1].split('/')[0]
         caption = filename + " and weight is " + weight
         caption = caption.replace('_','\\_')
-        MakePlot(outF,file,caption)
 
         if ifile==0:
             PlotBegin(outF)
-        elif ifile%3 == 2:
+
+        MakePlot(outF,file,caption)
+
+        if ifile%3 == 2:
             PlotEnd(outF)
             outF.write('\n')
 
