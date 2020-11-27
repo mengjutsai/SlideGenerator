@@ -83,7 +83,7 @@ def main():
     for folder in dict:
         fileList.append(folder+"/"+"stackplot_pBDT400_multiclass_cat_even_test_odd_allEvent.pdf")
 
-
+    sorted(fileList)
     lastRow = len(fileList)/3
     remain = len(fileList) % 3
 
