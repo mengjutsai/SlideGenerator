@@ -43,8 +43,32 @@ def main(outF,inputFolder):
     plot(outF,subfolder,inputFolder)
 
 
+    subfolder = "validation_pBDT_binary_official_NTree1000_allBKG_SigEqualWeight/separation/"
+
+    outF.write('\\section{'+subfolder.split("/")[-3].replace('_','\\_')+'}\n')
+
+    plot(outF,subfolder,inputFolder)
 
 
+    subfolder = "validation_pBDT_binary_official_NTree1000_allBKG_ScanWeight_tag0/separation/"
+
+    outF.write('\\section{'+subfolder.split("/")[-3].replace('_','\\_')+'}\n')
+
+    plot(outF,subfolder,inputFolder)
+
+
+    subfolder = "validation_pBDT_binary_official_NTree1000_allBKG_ScanWeight_tag1/separation/"
+
+    outF.write('\\section{'+subfolder.split("/")[-3].replace('_','\\_')+'}\n')
+
+    plot(outF,subfolder,inputFolder)
+
+
+    subfolder = "validation_pBDT_binary_official_NTree1000_allBKG_ScanWeight_tag2/separation/"
+
+    outF.write('\\section{'+subfolder.split("/")[-3].replace('_','\\_')+'}\n')
+
+    plot(outF,subfolder,inputFolder)
 
 
 
