@@ -85,9 +85,9 @@ def main():
 
     for ifile, file in enumerate(fileList):
         filename = "stackplot_pBDT400_multiclass_cat_even_test_odd_allEvent"
-        weight = file.split("ClassWeight_")[1]
+        weight = file.split("ClassWeight_")[1].split('/')[0]
         caption = filename + " and weight is " + weight
-        caption.replace('_','\\_')
+        caption = caption.replace('_','\\_')
         MakePlot(outF,file,caption)
 
     endPaper(outF)
