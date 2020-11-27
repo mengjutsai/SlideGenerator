@@ -3,9 +3,9 @@ from dictionary import *
 import glob
 
 def plot(outF,subfolder,inputFolder=""):
-    outF.write('\\begin{center}{'+subfolder.split("/")[-2]+'}\\end{center}\n')
+    outF.write('\\begin{center}{'+subfolder.split("/")[-3]+'}\\end{center}\n')
     # outF.write('\\Section{'+subfolder.split("/")[-2]+'}\n')
-    outF.write('\\begin{center}{'+subfolder.split("/")[-1]+'}\\end{center}\n')
+    outF.write('\\begin{center}{'+subfolder.split("/")[-2]+'}\\end{center}\n')
     dict = glob.glob(inputFolder+subfolder)
 
     fileList = []
