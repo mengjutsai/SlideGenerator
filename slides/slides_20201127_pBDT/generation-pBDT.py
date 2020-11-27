@@ -4,7 +4,7 @@ import glob
 
 def plot(outF,inputFolder=""):
 
-    dict = glob.glob("vali*/sta*")
+    dict = glob.glob(inputFolder+"vali*/sta*")
     # dir = "SR_6j_2b"
     print(dict)
     fileList = []
