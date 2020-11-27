@@ -3,8 +3,9 @@ from dictionary import *
 import glob
 
 def plot(outF,subfolder,inputFolder=""):
-    outF.write('\\begin{center}\n{'+subfolder.split("/")[-3].replace('_','\\_')+'}\n \\end{center}\n')
-    outF.write('\\begin{center}\n{'+subfolder.split("/")[-2].replace('_','\\_')+'}\n \\end{center}\n')
+    # outF.write('\\begin{center}\n{'+subfolder.split("/")[-3].replace('_','\\_')+'}\n \\end{center}\n')
+    # outF.write('\\begin{center}\n{'+subfolder.split("/")[-2].replace('_','\\_')+'}\n \\end{center}\n')
+    outF.write('\\subsection{'+subfolder.split("/")[-3].replace('_','\\_')+'}\n')
 
     list = glob.glob(inputFolder+subfolder+'*')
 
@@ -38,6 +39,9 @@ def plot(outF,subfolder,inputFolder=""):
 
 def main(outF,inputFolder):
     subfolder = "validation_pBDT_binary_official_NTree1000_allBKG_nominal/separation/"
+
+    outF.write('\\section{'+subfolder.split("/")[-3].replace('_','\\_')+'}\n')
+
     plot(outF,subfolder,inputFolder)
 
 
