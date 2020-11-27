@@ -39,6 +39,7 @@ def plot(outF,subfolder,inputFolder=""):
 
 def main(outF,inputFolder):
     subfolder = "validation_pBDT_binary_official_NTree1000_allBKG_nominal/separation/"
+    print("hello")
     plot(outF,subfolder,inputFolder)
 
 
