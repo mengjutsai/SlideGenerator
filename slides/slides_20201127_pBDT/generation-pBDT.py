@@ -3,9 +3,8 @@ from dictionary import *
 import glob
 
 def plot(outF,subfolder,inputFolder=""):
-    outF.write('\\begin{center}{'+subfolder.split("/")[-3].replace('_','\\')+'}\\end{center}\n')
-    # outF.write('\\Section{'+subfolder.split("/")[-2]+'}\n')
-    outF.write('\\begin{center}{'+subfolder.split("/")[-2].replace('_','\\')+'}\\end{center}\n')
+    # outF.write('\\begin{center}{'+subfolder.split("/")[-3].replace('_','\\')+'}\\end{center}\n')
+    # outF.write('\\begin{center}{'+subfolder.split("/")[-2].replace('_','\\')+'}\\end{center}\n')
 
     list = glob.glob(inputFolder+subfolder+'*')
 
@@ -32,7 +31,7 @@ def plot(outF,subfolder,inputFolder=""):
             PlotEnd(outF)
             outF.write('\n')
 
-        if remain!=0 and ifile > 3*lastRow-1:
+        if remain!=0 and ifile == 3*lastRow+remain-1:
             PlotEnd(outF)
             outF.write('\n')
 
