@@ -76,6 +76,7 @@ def main():
     # make_frame(outF, "Results")
 
     input = args.input
+    inputFolder = args.inputFolder
     dict = glob.glob(inputFolder+"vali*/sta*")
 
     fileList = []
