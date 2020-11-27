@@ -1,6 +1,6 @@
 
 # pBDT
-python generatePaper.py  --output /lustre/umt3/user/metsai/slides/slides_20201127_pBDT/ --outputfile "pBDT.tex" --inputFolder "/atlas/data19/metsai/hbsm4top/hbsm4topssml_pbdt/results/pBDT/validation/" --compile
+python generatePaper.py   --input slides/slides_20201127_pBDT/generation-pBDT.py --output /lustre/umt3/user/metsai/slides/slides_20201127_pBDT/ --outputfile "pBDT.tex" --inputFolder "/atlas/data19/metsai/hbsm4top/hbsm4topssml_pbdt/results/pBDT/validation/" --compile
 
 
 # object migration
