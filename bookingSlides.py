@@ -195,6 +195,7 @@ def closure(outF):
 
 def bookPaper(outF, File_title = "Recent Work"):
     outF.write("\\documentclass[]{report}\n")
+    outF.write("\\usepackage[margin=0.5in]{geometry}\n")
     outF.write("\\usepackage{graphicx}\n")
     outF.write("\\usepackage{subfig}\n")
     outF.write("\\usepackage[skip=0.1cm]{caption}\n")

@@ -91,12 +91,10 @@ def main():
         MakePlot(outF,file,caption)
         if ifile==0:
             pass
-        elif ifile>0 and ifile%3 ==1:
+        elif ifile>0 and ifile%3 == 2:
             outF.write('\n')
 
-        if ifile==0:
-            pass
-        elif ifile>0 and ifile%8 ==1:
+        if ifile%9 ==8:
             outF.write('\\newpage')
 
     endPaper(outF)
