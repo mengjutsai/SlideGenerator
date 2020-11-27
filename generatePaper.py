@@ -83,13 +83,16 @@ def main():
     for folder in dict:
         fileList.append(folder+"/"+"stackplot_pBDT400_multiclass_cat_even_test_odd_allEvent.pdf")
 
+
+    # lastRow = len(fileList) % 3
+
     for ifile, file in enumerate(fileList):
         filename = "stackplot_pBDT400_multiclass_cat_even_test_odd_allEvent"
         weight = file.split("ClassWeight_")[1].split('/')[0]
         caption = filename + " and weight is " + weight
         caption = caption.replace('_','\\_')
 
-        if ifile==0:
+        if ifile%3==0:
             PlotBegin(outF)
 
         MakePlot(outF,file,caption)
