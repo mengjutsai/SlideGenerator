@@ -6,14 +6,15 @@ def plot(outF,subfolder,inputFolder=""):
     outF.write('\\begin{center}{'+subfolder.split("/")[-3].replace('_','\\')+'}\\end{center}\n')
     # outF.write('\\Section{'+subfolder.split("/")[-2]+'}\n')
     outF.write('\\begin{center}{'+subfolder.split("/")[-2].replace('_','\\')+'}\\end{center}\n')
-    print(inputFolder+subfolder)
-    dict = glob.glob(inputFolder+subfolder)
 
-    fileList = []
-    for folder in dict:
-        fileList.append(folder)
+    list = glob.glob(inputFolder+subfolder)
 
-    fileList = sorted(fileList)
+    # fileList = []
+    # for file in dict:
+    #     fileList.append(file)
+
+    fileList = sorted(list)
+    print(fileList)
 
     lastRow = len(fileList)/3
     remain = len(fileList) % 3
