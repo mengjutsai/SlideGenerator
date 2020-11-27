@@ -84,7 +84,8 @@ def main():
         fileList.append(folder+"/"+"stackplot_pBDT400_multiclass_cat_even_test_odd_allEvent.pdf")
 
 
-    # lastRow = len(fileList) % 3
+    lastRow = len(fileList)/3
+    remain = len(fileList) % 3
 
     for ifile, file in enumerate(fileList):
         filename = "stackplot_pBDT400_multiclass_cat_even_test_odd_allEvent"
@@ -100,6 +101,11 @@ def main():
         if ifile%3 == 2:
             PlotEnd(outF)
             outF.write('\n')
+
+        if remain!=0 and ifile > 3*lastRow-1:
+            PlotEnd(outF)
+            outF.write('\n')
+
 
         # if ifile%9 == 8:
         #     PlotEnd(outF)
