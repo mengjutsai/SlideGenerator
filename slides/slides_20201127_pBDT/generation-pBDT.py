@@ -6,6 +6,7 @@ def plot(outF,subfolder,inputFolder=""):
     outF.write('\\begin{center}{'+subfolder.split("/")[-3].replace('_','\\')+'}\\end{center}\n')
     # outF.write('\\Section{'+subfolder.split("/")[-2]+'}\n')
     outF.write('\\begin{center}{'+subfolder.split("/")[-2].replace('_','\\')+'}\\end{center}\n')
+    print(inputFolder+subfolder)
     dict = glob.glob(inputFolder+subfolder)
 
     fileList = []
@@ -39,7 +40,6 @@ def plot(outF,subfolder,inputFolder=""):
 
 def main(outF,inputFolder):
     subfolder = "validation_pBDT_binary_official_NTree1000_allBKG_nominal/separation/"
-    print("hello")
     plot(outF,subfolder,inputFolder)
 
 
