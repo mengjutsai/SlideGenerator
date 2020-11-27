@@ -189,3 +189,26 @@ def closure(outF):
     outF.write("\\end{frame}\n")
     outF.write("\n\end{document}\n")
     outF.close()
+
+
+
+
+def bookPaper(outF, File_title = "Recent Work"):
+    outF.write("\\documentclass[]{report}\n")
+    outF.write("\\usepackage{graphicx}\n")
+    outF.write("\\usepackage{subfig}\n")
+    outF.write("\\usepackage[skip=0.1cm]{caption}\n")
+    outF.write("\\captionsetup[subfloat]{captionskip=0.1pt, labelformat=empty, position=top}\n")
+    outF.write("\\usepackage[skip=0.1cm]{caption}\n")
+    outF.write("\\begin{document}\n")
+    outF.write("\\maketitle\n")
+
+def MakePlot(file,caption):
+    outF.write("\\begin{figure}\n\\centering\n")
+    outF.write("\\includegraphics[width=0.7\\textwidth]{"+file+"}\n")
+    outF.write("\\caption{"+caption+"}\n")
+    outF.write("\\end{figure}\n")
+
+def endPaper(outF):
+    outF.write("\n\end{document}\n")
+    outF.close()

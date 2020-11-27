@@ -6,12 +6,21 @@ def plot(outF,inputFolder=""):
 
     dict = glob.glob(inputFolder+"vali*/sta*")
     # dir = "SR_6j_2b"
-    print(dict)
+    # print(dict)
     fileList = []
     for folder in dict:
-        print(folder)
+        # print(folder)
         fileList.append(folder+"/"+"stackplot_pBDT400_multiclass_cat_even_test_odd_allEvent.pdf")
-    print(fileList)
+    # print(fileList)
+    # slide1 = len(fileList) / 6
+    remain = len(fileList) % 6
+
+    for ifile, file in enumerate(fileList):
+        
+
+        # if "6p" in plot:
+        #     make_6plots(outF, Title,VarList,inputFolder+sel+"/")
+
                 # if ',' in file:
                 #     suffix = file.split(',')[1]
                 # else:
