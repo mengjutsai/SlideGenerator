@@ -6,9 +6,10 @@ def plot(outF,inputFolder=""):
 
     dict = glob.glob("vali*/sta*")
     # dir = "SR_6j_2b"
-    
+
     fileList = []
     for folder in dict:
+        print(folder)
         fileList.append(folder+"/"+"stackplot_pBDT400_multiclass_cat_even_test_odd_allEvent.pdf")
     print(fileList)
                 # if ',' in file:
