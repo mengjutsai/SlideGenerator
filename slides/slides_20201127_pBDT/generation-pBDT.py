@@ -6,7 +6,7 @@ def plot(outF,inputFolder=""):
 
     dict = glob.glob("vali*/sta*")
     # dir = "SR_6j_2b"
-
+    print(dict)
     fileList = []
     for folder in dict:
         print(folder)
