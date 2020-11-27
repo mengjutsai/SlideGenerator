@@ -22,8 +22,6 @@ def plot(outF,subfolder,inputFolder=""):
     for ifile, file in enumerate(fileList):
         filename = file.split("/")[-1].replace('_','\\_')
         caption = filename
-        caption = caption.replace('_','\\_')
-        # print(caption)
 
         if ifile%3==0:
             PlotBegin(outF)
