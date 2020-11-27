@@ -200,6 +200,7 @@ def bookPaper(outF, File_title = "Recent Work"):
     outF.write("\\usepackage[skip=0.1cm]{caption}\n")
     outF.write("\\captionsetup[subfloat]{captionskip=0.1pt, labelformat=empty, position=top}\n")
     outF.write("\\usepackage[skip=0.1cm]{caption}\n")
+    outF.write("\\title{"+File_title+"}\n")
     outF.write("\\begin{document}\n")
     outF.write("\\maketitle\n")
 

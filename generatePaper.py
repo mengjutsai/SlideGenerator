@@ -71,7 +71,7 @@ def main():
     files_list = []
     hist_list = []
 
-    bookPaper(outF, "Update")
+    bookPaper(outF, "stackplot")
 
     # make_frame(outF, "Results")
 
