@@ -7,7 +7,7 @@ def plot(outF,subfolder,inputFolder=""):
     # outF.write('\\Section{'+subfolder.split("/")[-2]+'}\n')
     outF.write('\\begin{center}{'+subfolder.split("/")[-2].replace('_','\\')+'}\\end{center}\n')
 
-    list = glob.glob(inputFolder+subfolder)
+    list = glob.glob(inputFolder+subfolder+'*')
 
     # fileList = []
     # for file in dict:
