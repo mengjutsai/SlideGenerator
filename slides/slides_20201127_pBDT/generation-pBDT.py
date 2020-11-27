@@ -14,16 +14,16 @@ def plot(outF,subfolder,inputFolder=""):
     #     fileList.append(file)
 
     fileList = sorted(list)
-    print(fileList)
+    # print(fileList)
 
     lastRow = len(fileList)/3
     remain = len(fileList) % 3
 
     for ifile, file in enumerate(fileList):
-        filename = file.split("/")[-1].replace('_','\\')
+        filename = file.split("/")[-1].replace('_','\\_')
         caption = filename
         caption = caption.replace('_','\\_')
-        print(caption)
+        # print(caption)
 
         if ifile%3==0:
             PlotBegin(outF)
